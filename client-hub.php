@@ -4,7 +4,7 @@
  * Plugin URI: https://jocsoft.net
  * Description: Unified Enterprise Solution Discovery Engine, Grounded AI Solution Advisor, and Client Support Portal for Jocsoft Solutions.
  * Version: 1.0.0
- * Author: Jocsoft Solutions Limited & Lynmwita
+ * Author: Jocsoft Solutions Limited
  * Author URI: https://jocsoft.net
  * Text Domain: jocsoft-client-hub
  * License: Proprietary

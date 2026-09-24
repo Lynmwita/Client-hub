@@ -45,6 +45,6 @@ An enterprise WordPress platform bridging potential institutional clients (TVETs
 
 ---
 
-## Author & Enterprise Attribution
-- **Enterprise**: Jocsoft Solutions Limited, Court 7731, Muchai Drive, Nairobi, Kenya
-- **Repository**: [Lynmwita/Client-hub](https://github.com/Lynmwita/Client-hub)
+## Enterprise Attribution
+- **Organization**: Jocsoft Solutions Limited, Court 7731, Muchai Drive, Nairobi, Kenya
+- **Website**: [jocsoft.net](https://jocsoft.net)

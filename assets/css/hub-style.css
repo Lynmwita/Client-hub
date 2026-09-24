@@ -5,15 +5,17 @@
 
 :root {
     --jocsoft-navy-900: #0f172a;
-    --jocsoft-navy-800: #1e293b;
-    --jocsoft-navy-700: #334155;
+    --jocsoft-navy-800: #0d3b66;
+    --jocsoft-navy-700: #1e3a8a;
     --jocsoft-slate-600: #475569;
     --jocsoft-slate-400: #94a3b8;
     --jocsoft-slate-200: #e2e8f0;
     --jocsoft-slate-100: #f1f5f9;
     --jocsoft-slate-50: #f8fafc;
-    --jocsoft-blue-600: #2563eb;
-    --jocsoft-blue-700: #1d4ed8;
+    --jocsoft-blue-600: #0d3b66;
+    --jocsoft-blue-700: #1e3a8a;
+    --jocsoft-orange-600: #ea580c;
+    --jocsoft-orange-500: #f59e0b;
     --jocsoft-teal-700: #0f766e;
     --jocsoft-emerald-700: #047857;
     --jocsoft-amber-700: #b45309;

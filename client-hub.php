@@ -122,6 +122,134 @@ class Jocsoft_Client_Experience_Hub {
                 }
             }
         }
+
+        // 4. Update Header & Footer Template Parts in database
+        $footer_content = '<div class="wp-block-group alignwide" style="border-top:1px solid #e2e8f0;padding-top:48px;padding-bottom:36px;padding-left:32px;padding-right:32px;background-color:#0f172a;color:#ffffff;">
+	<div class="wp-block-columns alignwide" style="display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;">
+		<div class="wp-block-column" style="flex:1 1 360px;box-sizing:border-box;">
+			<h3 style="font-size:1.15rem;font-weight:800;color:#ffffff;text-transform:uppercase;margin:0 0 8px 0;letter-spacing:-0.01em;">Jocsoft Solutions Limited</h3>
+			<p style="color:#94a3b8;font-size:0.875rem;line-height:1.6;margin:0 0 12px 0;">Empowering Kenyan SACCOs, TVET colleges, and enterprises with robust management systems, e-learning ecosystems, and 24/7 centralized support.</p>
+			<p style="color:#cbd5e1;font-size:0.8rem;margin:0;">Court 7731, Muchai Drive &bull; Nairobi, Kenya</p>
+		</div>
+		<div class="wp-block-column" style="flex:0 1 180px;box-sizing:border-box;">
+			<h4 style="font-size:0.75rem;font-weight:700;color:#38bdf8;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px 0;">Navigation</h4>
+			<p style="font-size:0.875rem;line-height:2;margin:0;">
+				<a href="' . esc_url(home_url('/')) . '" style="color:#cbd5e1;text-decoration:none;">Home</a><br>
+				<a href="' . esc_url(home_url('/find-my-solution/')) . '" style="color:#cbd5e1;text-decoration:none;">Find My Solution</a><br>
+				<a href="' . esc_url(home_url('/client-portal/')) . '" style="color:#cbd5e1;text-decoration:none;">Client Support Hub</a><br>
+				<a href="' . esc_url(home_url('/projects/')) . '" style="color:#cbd5e1;text-decoration:none;">Software Solutions</a><br>
+				<a href="' . esc_url(home_url('/about/')) . '" style="color:#cbd5e1;text-decoration:none;">About Us</a><br>
+				<a href="' . esc_url(home_url('/contact/')) . '" style="color:#cbd5e1;text-decoration:none;">Contact</a>
+			</p>
+		</div>
+		<div class="wp-block-column" style="flex:0 1 240px;box-sizing:border-box;">
+			<h4 style="font-size:0.75rem;font-weight:700;color:#38bdf8;text-transform:uppercase;letter-spacing:1px;margin:0 0 12px 0;">Enterprise Inquiries</h4>
+			<p style="font-size:0.875rem;line-height:1.8;color:#94a3b8;margin:0;">
+				Phone: <a href="tel:+254732447447" style="color:#38bdf8;text-decoration:none;">(+254) 732 447 447</a><br>
+				Email: <a href="mailto:info@jocsoft.net" style="color:#38bdf8;text-decoration:none;">info@jocsoft.net</a><br>
+				Website: <a href="https://jocsoft.net" target="_blank" rel="noopener" style="color:#cbd5e1;text-decoration:none;">jocsoft.net</a>
+			</p>
+		</div>
+	</div>
+	<div style="border-top:1px solid #1e293b;margin-top:36px;padding-top:20px;text-align:center;">
+		<p style="color:#64748b;font-size:0.8rem;margin:0;">&copy; ' . date('Y') . ' Jocsoft Solutions Limited. All rights reserved. Future Solutions Today.</p>
+	</div>
+</div>';
+
+        $header_content = '<div class="wp-block-group alignwide" style="padding-top:16px;padding-bottom:16px;padding-left:24px;padding-right:24px;border-bottom:1px solid #e2e8f0;background-color:#ffffff;">
+	<style id="jocsoft-corporate-style">
+	  @import url(\'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap\');
+	  style, script, template, noscript { display: none !important; }
+	  :root {
+	    --wp--preset--color--contrast: #0f172a !important;
+	    --wp--preset--color--contrast-2: #1e293b !important;
+	    --wp--preset--color--contrast-3: #334155 !important;
+	    --wp--preset--color--base: #ffffff !important;
+	    --wp--preset--color--base-2: #f8fafc !important;
+	    --wp--preset--color--accent: #0d3b66 !important;
+	    --wp--preset--color--accent-2: #ea580c !important;
+	    --wp--preset--color--accent-3: #1e3a8a !important;
+	  }
+	  html, body, .wp-site-blocks, header, footer, .wp-block-template-part {
+	    background-color: #f8fafc !important;
+	    color: #334155 !important;
+	    font-family: \'Plus Jakarta Sans\', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+	    -webkit-font-smoothing: antialiased;
+	    margin: 0;
+	    padding: 0;
+	  }
+	  .wp-site-blocks, .entry-content, .wp-block-post-content, main {
+	    max-width: 1140px !important;
+	    width: 100% !important;
+	    margin-left: auto !important;
+	    margin-right: auto !important;
+	    padding-left: 20px !important;
+	    padding-right: 20px !important;
+	    box-sizing: border-box !important;
+	  }
+	  .wp-block-post-content > * {
+	    max-width: 100% !important;
+	    width: 100% !important;
+	    margin-left: auto !important;
+	    margin-right: auto !important;
+	    box-sizing: border-box !important;
+	  }
+	  h1, h2, h3, h4, h5, h6, .wp-block-heading, .wp-block-post-title, .wp-block-site-title {
+	    font-family: \'Plus Jakarta Sans\', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+	    font-weight: 800 !important;
+	    color: #0f172a !important;
+	    letter-spacing: -0.02em !important;
+	  }
+	  p, li, span, label, input, textarea, a, button {
+	    font-family: \'Plus Jakarta Sans\', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+	  }
+	  .wp-block-navigation a {
+	    color: #475569 !important;
+	    font-size: 0.9rem !important;
+	    font-weight: 600 !important;
+	    text-decoration: none !important;
+	    transition: color 0.15s ease !important;
+	  }
+	  .wp-block-navigation a:hover {
+	    color: #0d3b66 !important;
+	  }
+	</style>
+	<div class="wp-block-group alignwide" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+		<div class="wp-block-group" style="display:flex;align-items:center;gap:10px;">
+			<a href="' . esc_url(home_url('/')) . '" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+				<span style="color:#0d3b66;font-weight:900;font-size:1.25rem;letter-spacing:-0.02em;text-transform:uppercase;">JOCSOFT SOLUTIONS</span>
+			</a>
+			<span style="color:#cbd5e1;font-size:1rem;font-weight:400;">|</span>
+			<span style="color:#64748b;font-size:0.8rem;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;">Future Solutions Today</span>
+		</div>
+		<div class="wp-block-group" style="display:flex;align-items:center;gap:20px;">
+			<!-- wp:navigation {"layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"0"},"blockGap":"20px"}}} /-->
+			<a href="' . esc_url(home_url('/find-my-solution/')) . '" style="background-color:#ea580c;color:#ffffff;border-radius:6px;font-weight:700;font-size:0.85rem;padding:9px 18px;text-decoration:none;display:inline-block;box-shadow:0 2px 6px rgba(234,88,12,0.25);">
+				Find My Solution &rarr;
+			</a>
+		</div>
+	</div>
+</div>';
+
+        $all_parts = get_posts(array(
+            'post_type'      => 'wp_template_part',
+            'post_status'    => array('publish', 'inherit'),
+            'posts_per_page' => -1
+        ));
+
+        foreach ($all_parts as $part) {
+            if ($part->post_name === 'footer') {
+                wp_update_post(array(
+                    'ID'           => $part->ID,
+                    'post_content' => $footer_content
+                ));
+            } elseif ($part->post_name === 'header') {
+                wp_update_post(array(
+                    'ID'           => $part->ID,
+                    'post_content' => $header_content
+                ));
+            }
+        }
     }
 
     public function deactivate() {

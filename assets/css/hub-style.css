@@ -634,69 +634,107 @@
 }
 
 /* Table */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 16px;
+    border: 1px solid var(--jocsoft-slate-200);
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
 .jocsoft-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 13px;
-}
-
-.jocsoft-table th,
-.jocsoft-table td {
-    padding: 12px 16px;
+    font-size: 13.5px;
     text-align: left;
-    border-bottom: 1px solid var(--jocsoft-slate-200);
 }
 
 .jocsoft-table th {
     background-color: var(--jocsoft-slate-50);
-    font-weight: 600;
-    color: var(--jocsoft-navy-800);
+    color: var(--jocsoft-navy-900);
+    font-weight: 700;
+    padding: 14px 18px;
+    border-bottom: 2px solid var(--jocsoft-slate-200);
+    font-size: 12.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.jocsoft-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--jocsoft-slate-200);
+    color: var(--jocsoft-slate-600);
+    vertical-align: middle;
+}
+
+.jocsoft-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.jocsoft-table tbody tr:hover {
+    background-color: var(--jocsoft-slate-50);
 }
 
 .jocsoft-badge {
     display: inline-block;
     padding: 3px 8px;
     border-radius: 4px;
-    font-size: 11px;
-    font-weight: 600;
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .urgency-critical {
     background-color: #fee2e2;
-    color: var(--jocsoft-rose-700);
+    color: #991b1b;
+    border: 1px solid #fca5a5;
 }
 
 .urgency-medium {
     background-color: #fef3c7;
-    color: var(--jocsoft-amber-700);
+    color: #92400e;
+    border: 1px solid #fcd34d;
 }
 
 .urgency-low {
-    background-color: #f1f5f9;
-    color: var(--jocsoft-slate-600);
+    background-color: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
 }
 
 .status-pill {
     display: inline-block;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
     font-weight: 600;
 }
 
-.status-in-progress {
-    background-color: #dbeafe;
-    color: var(--jocsoft-blue-700);
+.status-submitted {
+    background-color: var(--jocsoft-slate-100);
+    color: var(--jocsoft-slate-600);
+    border: 1px solid var(--jocsoft-slate-200);
 }
 
 .status-assigned {
-    background-color: #e0e7ff;
-    color: #4338ca;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+}
+
+.status-in-progress {
+    background-color: #fef3c7;
+    color: #b45309;
+    border: 1px solid #fde68a;
 }
 
 .status-resolved {
-    background-color: #d1fae5;
-    color: var(--jocsoft-emerald-700);
+    background-color: #dcfce7;
+    color: #15803d;
+    border: 1px solid #bbf7d0;
 }
 
 /* Knowledge Base */
